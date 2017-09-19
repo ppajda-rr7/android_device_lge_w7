@@ -36,6 +36,8 @@ TARGET_BOOTLOADER_BOARD_NAME := w7
 
 # Kernel
 TARGET_KERNEL_CONFIG := w7ds_lineageos_defconfig
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 
 # Filesystem,
 BOARD_FLASH_BLOCK_SIZE := 131072
